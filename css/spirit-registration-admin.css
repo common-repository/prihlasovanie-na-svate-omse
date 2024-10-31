@@ -1,0 +1,113 @@
+.tsspsv .button {
+	margin-right: 10px;
+}
+
+.tsspsv .ajax-loader {
+    visibility: hidden;
+    display: inline-block;
+    background-image: url(../images/ajax-loader.gif);
+    width: 16px;
+    height: 16px;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 4px;
+    vertical-align: middle;
+}
+
+.tsspsv .button.delete {
+	color: #a00;
+	border-color: #a00;
+}
+
+.tsspsv-edit-value {
+	display: none;
+}
+
+.tsspsv .narrow-column {
+	width: 2.2em;
+}
+
+.tsspsv .new .tsspsv-edit-value {
+	display: block;
+}
+
+.tsspsv-shortcode span{
+	background-color: #e5e5e6;
+    border: 1px solid #d2d2d2;
+    padding: 1px 10px;
+    vertical-align: middle;	
+}
+
+.tsspsv-service-name {
+	width: 100%;
+}
+
+#tsspsv-reg-table .column-order {
+	text-align: center;
+	width: 70px;
+}
+
+#tsspsv-services-table .capacity-column, #tsspsv-services-table .order-column, .tsspsv-check {
+	width:5em;
+	text-align: center;
+}
+
+#tsspsv-services-table .order-arrow {
+	font-size: 10px;
+	color: #555;
+	display: none;
+}
+
+#tsspsv-services-table tr td.order-column:hover .order-arrow {
+	display: inline-block;	
+}
+
+#tsspsv-services-table .order-arrow:hover {
+	cursor: pointer;
+	color: #0073aa;
+}
+
+
+input[name=service_capacity] {
+	width: 65px;
+}
+
+#tsspsv-services-table .invisible {
+	visibility: hidden;
+}
+
+
+@media print {
+	table, th, td {
+		border: 1pt solid black !important;
+	  }	
+	
+	.no-print {
+		display: none;
+	}
+
+	input[type=checkbox] {
+		display: none;
+	}	
+
+	.widefat td, .widefat th {
+		font-size: 10px !important;
+		line-height: 1em !important;
+		padding: 4px 10px;
+		/* border-bottom: 1px solid #000; */
+	}
+
+	.widefat tbody th.check-column {
+		padding: 4px 0px 0px 0px;
+	}
+
+	.column-order {
+		text-align: center !important;
+		width: 50px !important;
+}
+	}
+
+	td.check-column, th.check-column {
+		/* border-left: 1px solid #000; */
+	}
+}
